@@ -1,0 +1,91 @@
+@import url(../css/fonts.css);
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+text-transform: capitalize;
+overflow: hidden;
+
+}
+
+/* -----------------------------------variables-------------- */
+:root{
+  --Abel:'Abel',cursive;
+  --josephin:'josefin',cursive;
+  --lexand:'livic',cursive;
+  --anton:'anton',cursive;
+
+/* -------------------CUSTOM COLORS------------------------------ */
+--home-bg:linear-gradient(180,#DDF673 0%, #4D9C02 100%);
+--pages-bg:#34DF9C;
+--headings:black;
+--button-bg:#0A0B25;
+--midnight:#0B2322;
+--text-light:#808080;
+}
+
+/* ----------------------x--------------------variables----------------------x-------- */
+/* ------------------------global styles--------------------------------------- */
+ul{
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.flex-row{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+/* --------------X----------global styles----------------X----------------------- */
+
+/* --------------------nav--------------------------------- */
+.nav{
+  min-height: 10vh;
+  overflow: hidden;
+  height:0;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+  background: var(--midnight);
+}
+.nav .nav-items{
+  display: flex;
+  margin: 0;
+}
+.nav .nav-items .nav-link{
+  padding: 1.1rem;
+  font-family: var(--josephin);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.nav .nav-items .nav-link :hover{
+  background-color: var(--text-light);
+}
+.nav .nav-menu{
+  justify-content: space-between;
+}
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  cursor: pointer;
+  width: 90%;
+  display: none;
+
+}
+.nav .toggle-collapse .toggle-icons{
+  display: flex;
+  justify-content: flex-end;
+  padding:  1.7rem 0;
+}
+.collpase{
+  height: 40rem;
+}
+.nav .toggle-collapse .toggle-collapse i{
+  font-size: 1.4rem;
+  color: aqua;
+}
