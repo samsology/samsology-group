@@ -1,0 +1,154 @@
+@import url(../CSS/fonts.css);
+
+html,body{
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #1f1e1e;
+  
+}
+/* -------------------variables--------------------------------------- */
+:root{
+  /* ---------------theme---------font-family----------------------------- */
+  --Abel:'Abel',cursive;
+  --Anton:'Anton',cursive;
+  --josefin:'josefin',cursive;
+  --lexand:'lexand',cursive;
+  --Livic:'livic',cursive;
+  
+  
+  /* --------------------------colors-------------------------------------------- */
+  --text-gray:#256ebd;
+  --text-light:#f6f4f4da;
+  --bg-color:#0a0707;
+  --white:#ffffff;
+  --midnight:#171055;
+  --bg-article-2:#cacaca;
+  /* -----------------------------gradient color--------------------------------------------- */
+  --sky:linear-gradient(180deg, #512cf8 0%, #f0e8e948 100%);
+}
+/* ----icon */
+.icon{
+  background: hsl(0, 0%, 10%);
+  border-radius: 20rem;
+  background-position: left;
+  background-size: contain;
+  box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, .66);
+  margin-bottom: 1rem;
+}
+.article-2{
+  margin-top: 2rem;
+  margin-left: 0rem !important;
+}
+.article-2 i{
+  background:blue;
+  color:white;
+}
+/* --------x-----------variables----------------x----------------------- */
+/* ----------------------Global classes------------------------------------ */
+a{
+  text-decoration: none;
+  color: var(--text-gray);
+  
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+h1{
+  font-family: var(--lexand);
+  font-size: 2.5rem;
+}
+.popular-post h2{
+  font-family: var(--Abel);
+  color: var(--white);
+}
+h3{
+  font-family: var(--Abel);
+  font-size: 1.3rem;
+  color:black;
+  color: greenyellow;
+  text-align: center; 
+}
+button.btn{
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Livic);
+  cursor: pointer;
+}
+span{
+  font-family: var(--Abel);
+}
+.container{
+  margin: 0 5vw;
+}
+.text-gray{
+  color: var(--text-gray);
+}
+p{
+  font-family: var(--lexand);
+  color: var(--white);
+}
+
+
+/* -------------x---------Global classes----------------x------------------- */
+/* ------------------nav bar------------------------------------------------ */
+
+
+
+
+/* ----------x--------nav bar-----------------x------------------- */
+
+/* ---------------container-------------------------- */
+.container{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 4rem;
+}
+.article-title{
+  font-family: var(--Abel);
+  font-size: 1.3rem;
+  background:white;
+  font-size: 2rem;
+  text-align:center;
+}
+
+/* ------------------side-bar----------------------- */
+.popular-post {
+  margin-right: 1rem;
+}
+.popular-post h2{
+  color: yellowgreen;
+}
+.post-title a{
+  color:var(--white);
+  font-size:1.4rem;
+  font-family:var(--Abel);
+  text-align:center;
+}
+/* -------x-----------side-bar------------x----------- */
+/* ------x---------container-------------x------------- */
+
+/*----------------media queries----------------------- */
+@media only screen and (max-width:520px){
+  .container{
+    display:grid;
+    grid-template-columns:1fr;
+    margin:1rem;
+    
+  }
+  img{
+    width: 100% !important;
+  }
+}
+
+

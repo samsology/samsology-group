@@ -6,6 +6,7 @@ html,body{
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  text-transform: capitalize;
   background: rgb(246, 237, 237)
   
 }
@@ -19,16 +20,28 @@ html,body{
   --Livic:'livic',cursive;
   
   /* --------------------------colors-------------------------------------------- */
-  --text-gray:#3f4954;
+  --text-gray:#212529;
   --text-light:#686666da;
   --bg-color:#0f0f0f;
   --white:#ffffff;
   --midnight:#104f55;
+  --uni-body:#01362d;
+  --uni-paragraph:white;
+  
   /* -----------------------------gradient color--------------------------------------------- */
   --sky:linear-gradient(180deg, #2af598 0%, #76b3da 100%);
+  --click:linear-gradient(180deg, #101312 0%, #76b3da 100%);
 }
 /* --------x-----------variables----------------x----------------------- */
 /* ----------------------Global classes------------------------------------ */
+.icon{
+  background: hsl(212, 83%, 20%);
+  border-radius: 20rem;
+  background-position: left;
+  background-size: contain;
+  box-shadow: 1px 1px 1px 4px rgba(0, 0, 0, .66);
+  margin-bottom: 1rem;
+}
 a{
   text-decoration: none;
   text-align: center;
@@ -41,10 +54,10 @@ a{
 }
 ul{
   list-style: none;
-}
+}b
 h1{
   font-family: var(--lexand);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 h2{
   font-family: var(--lexand);
@@ -64,6 +77,7 @@ button.btn{
   font-family: var(--Livic);
   cursor: pointer;
 }
+
 span{
   font-family: var(--Abel);
 }
@@ -76,6 +90,29 @@ span{
 p{
   font-family: var(--lexand);
   color: var(--text-light);
+}
+.defaults{
+  background: #9aff02 !important;
+}
+
+
+.uni-paragraph{
+  color: var(--uni-paragraph);
+  margin: .5rem 2rem;
+}
+#addresses{
+  text-align: center;
+}
+#subcibersNum{
+  font-family: var(--josefin);
+  color:var(--white);
+  background: none;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+  text-emphasis: none;
+  text-align: center;
+  justify-items: center;
 }
 /* -------------x---------Global classes----------------x------------------- */
 /* ------------------nav bar------------------------------------------------ */
@@ -160,8 +197,8 @@ nav .nav-items{
 /* --------------site title---------------------- */
 
 .site-title{
- /* background-image: url('../asserts/white-ceramic-teacup-with-saucer-near-two-books-above-gray-904616.jpg'); */
-background-image: url('../asserts/SAMSOLOGY-BG.jpg');
+  /* background-image: url('../asserts/white-ceramic-teacup-with-saucer-near-two-books-above-gray-904616.jpg'); */
+  background-image: url('../asserts/SAMSOLOGY-BG.jpg');
   background-size: cover;
   background-position: bottom;
   height: 110vh;
@@ -177,6 +214,7 @@ background-image: url('../asserts/SAMSOLOGY-BG.jpg');
 .site-title h1,h3{
   background: rgba(0, 0, 0,.25);
   margin: .3rem;
+  font-size: 3.5rem;
   
 }
 .site-title h3{
@@ -225,9 +263,16 @@ background-image: url('../asserts/SAMSOLOGY-BG.jpg');
   padding: .7rem 2rem;
   background:var(--sky);
   margin: .5rem;
+  opacity: .8rem;
+}
+.btn-blog:focus{
+  opacity: .8;
+  background-color: 0 0 #88cde9;
 }
 .blog-content span{
   display: block;
+  opacity: .8;
+  background-color: 0 0 #88cde9;
 }
 
 .owl-nav{
@@ -399,6 +444,8 @@ background-image: url('../asserts/SAMSOLOGY-BG.jpg');
   width: 50%;
   height: 1.9rem;
   padding: .3rem 5rem;
+  opacity: .8;
+  outline: none;
   font-family: var(--lexand);
   font-size: 1rem;
 }
@@ -426,8 +473,13 @@ background-image: url('../asserts/SAMSOLOGY-BG.jpg');
 .tag:hover{
   background: greenyellow;
 }
-
-
+.tag h3{
+  font-size: 1.2rem;
+  
+}
+.tag p{
+  color: black;
+}
 /* ----------------------side bar----------------------------- */
 
 
@@ -494,10 +546,13 @@ background-image: url('../asserts/SAMSOLOGY-BG.jpg');
 .footer .Quick-links li{
   font-size: 1.5rem;
   background:transparent;
-  color: #c8f2ff;
+
+}
+.footer .Quick-links li a{
+  color: #f0eaea;
 }
 .footer .Quick-links li a:hover{
-  color: var(--white);
+  color: #12bcf0;
 }
 
 .rights{
@@ -589,6 +644,23 @@ background-image: url('../asserts/SAMSOLOGY-BG.jpg');
   }
   .popular-tags {
     max-width: 100%;
+  }
+  .site-title h1,h3{
+    background: rgba(0, 0, 0,.25);
+    margin: .3rem;
+    font-size: 1.5rem;
+    
+  }
+  .site-title h3{
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+  body{
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+  .rights{
+    font-size: 1rem;
   }
 }
 /* =====x====viewport less than or equal t0 520px=====x====== */

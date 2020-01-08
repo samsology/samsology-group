@@ -1,0 +1,256 @@
+/* VARIABLES */
+:root{
+  --uni-body:#01362d;
+  --uni-paragraph:white;
+  --uni-body-1OOL:#06073f;
+  --click:linear-gradient(180deg,black 0%, blue 100%);
+}
+.motto{
+  color: aqua;
+  font-size: 1.5rem;
+  text-align: center;
+ margin-bottom: 0rem;
+}
+/* ---------------about samsology group --------------*/
+
+section p,h1{
+  color: aliceblue;
+margin: .5rem;
+}
+section h2{
+  text-align: center;
+  background: #4b4a4a;
+  justify-content: center;
+
+}
+section li{
+  text-align: left;
+  background: #4b4a4a;
+  justify-content: center;
+  margin:0rem 1rem;
+  font-size:1.5rem;
+;
+
+}
+@media only screen and (min-width:760px) {
+  section>p,h1{
+    color: aliceblue;
+  /* margin-left: 15rem;
+  margin-right: 15rem; */
+  }
+  section h2{
+    text-align: center;
+    background: #4b4a4a;
+    justify-content: center;
+    margin-left: 15rem;
+  margin-right: 15rem;
+  }
+  section li{
+    text-align: left;
+    padding: .5rem;
+    background: #4b4a4a;
+    justify-content: center;
+    margin-left: 15rem;
+  margin-right: 15rem;
+  
+  }
+}
+
+p{
+  color: aliceblue;
+}
+
+/* ------------goblal classes---------------------------- */
+.uni-btn{
+  /*background: linear-gradient(180deg, black 0%, blue,100% ) !important;
+  */background-color: var(--click);
+  font-weight: bolder;
+  padding: .8rem 5rem;
+  background-color: #030f04;
+  color: rgb(252, 249, 249);
+  box-shadow: 1px 1px 1px 3px rgb(102, 102, 102);
+  outline: none;
+  font-size: 2rem;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.uni-btn:hover{
+  opacity: .6;
+
+}
+.human-ana h2{
+  text-align: center;
+}
+.about-author{
+  text-align: center;
+  justify-content: center;
+  /* display: flex;  */
+  margin-left: 1rem;
+  padding: .5rem .5rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--uni-body);
+}
+/* -----------------first year btn-------------------------------------- */
+.uni-btn-first{
+  
+  padding: .6rem 6rem;
+  margin: .2rem .1rem;
+  font-weight: bolder;
+  font-size:1.2rem;
+  background-color: rgb(197, 196, 196);
+  outline: none;
+  border: none;
+  text-align: left;
+  box-shadow: 1PX 3PX greenyellow;
+}
+.uni-btn-first:hover{
+  box-shadow: none;
+  opacity: .8;
+  color: white;
+}
+/* -----------x--------------first year btn----------------x----------------------------- */
+.uni-h1{
+  text-align: center;
+  background: rgba(0, 0, 0, .35);
+  margin-top: 0rem;
+  margin: 0rem;
+  padding-bottom:1.5rem;
+}
+.uni-body{
+  background: var(--uni-body);
+  color: aliceblue;
+
+}
+ .uni-paragraph{
+  margin-left:.5rem ;
+  margin-right: .5rem;
+} 
+/* ------------X--------global classses---------X------------------ */
+
+
+
+/* ------------------CONTENT------------------------ */
+.site-content-for-uni-{
+  display: grid;
+  grid-template-columns:1fr;
+  margin-left:1rem;
+  margin-right:1rem;
+  grid-gap: 5rem;
+}
+.uni-side-bar ul{
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.uni-side-bar ul li{
+  font-size: 2rem;
+  font-weight: bolder !important;
+  
+}
+.uni-click:hover{
+  background: rgb(22, 43, 1);
+}
+/* ------------------------------slider--------------------------------------------- */
+.slider-uni{
+ background-image: url('../asserts/white-ceramic-teacup-with-saucer-near-two-books-above-gray-904616.jpg');
+  background-position: center;
+  background-size: cover;
+  animation:animate ;
+  -webkit-animation:animate ;
+  animation-duration: 30s ;
+  animation-delay: 3s;
+  padding-bottom:5rem ;
+  animation-iteration-count: infinite ;
+}
+
+ @keyframes animate{
+   0%{
+    background-image: url('../asserts/aeticles/sperms-img\ \(2\).jpg');
+  }
+  25%{
+    background-image: url('../asserts/features-images/colors-colours-health-medicine-143654.jpg');
+  }
+  50%{
+    background-image: url('../asserts/aeticles/human-skeleton.jpg');
+  }
+  75%{
+    background-image: url('../asserts/aeticles/sperm-slide.jpg');
+  }
+  100%{
+    background-image: url('../asserts/aeticles/scientist-with-beaker.jpg');
+}
+ }
+
+
+
+/* ------------------CONTENT------------------------ */
+
+/* ----------------MEDIA QUriertes--about us---*/
+ @media only screen and (min-width:640px) {
+  .site-content-for-uni-{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .uni-side-bar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .uni-btn{
+    /*background: linear-gradient(180deg, black 0%, blue,100% ) !important;
+    */background-color: var(--click);
+    font-weight: bolder;
+    padding: 1rem 15rem;
+    background-color: #030f04;
+    color: rgb(252, 249, 249);
+    margin: .5rem .5rem;
+    box-shadow: 1px 1px 1px 3px rgb(102, 102, 102);
+    max-width: 4rem;
+    outline: none;
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  section p,h1{
+    color: aliceblue;
+  margin: 1rem;
+  }
+  .uni-side-bar ul{
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+h1{
+  text-align: center;
+}
+.about-author{
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+  margin-left: 30rem;
+  padding: 1rem 1rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--uni-body);
+}
+ .about-us{
+  margin-left: 8rem;
+  margin-right: 8rem;
+
+} 
+} 
+
+
+
+
