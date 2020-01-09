@@ -1,0 +1,134 @@
+*, :before, :after {
+  box-sizing: border-box;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular'eva, Verdana, sans-serif;
+   */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root{
+  --hue-neutral:200;
+  --hue-wrong:0;
+  --hue-correct:145;
+}
+.quiz-container{
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  --hue:var(--hue-neutral);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue),100%,20%);
+  
+}
+body.correct {
+  --hue:var(--hue-correct);
+}
+body.wrong {
+  --hue:var(--hue-wrong);
+}
+
+.container{
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 10px 2px;;
+}
+.btn-grid{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+ gap: 10px;
+ margin:  20px 0;
+}
+.btn{
+  --hue:var(--hue-neutral);
+  background-color: hsl(var(--hue),100%,50%);
+ 
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid hsl(var(--hue),100%,30%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  color: black;
+  text-transform: capitalize;
+}
+.btn-online{
+  font-size: 4rem !important;
+}
+.btn:hover{
+  border-color: black;
+}
+.btn.correct{
+  --hue:var(--hue-correct);
+  color: black;
+}
+.btn.wrong{
+  --hue:var(--hue-wrong);
+}
+.start-btn, .next-btn{
+  font-size: 3.0rem;
+  font-weight: bold;
+  padding: 10px 20px;
+
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.hide {
+  display: none;
+}
+#question{
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  text-align: center;
+  justify-content: center;
+  background: #000;
+  color: aqua;
+}
+/* score */
+#progress{
+  background-color: aliceblue;
+  padding: .6rem .5rem;
+  margin: .2rem;
+  box-shadow: 1px 1px 1px 2px rgb(10, 22, 10);
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  font-weight: bolder;
+  outline: none;
+  font-size: 1rem;
+  color: azure;
+  background-color: green;
+
+}
+/* -------------------------------------nav */
+/* ----------------------------media quaries--------------- */
+@media only screen and (max-width:450px){
+  .btn-grid{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+   gap: 10px;
+   margin:  20px 0;
+  }
+}
+

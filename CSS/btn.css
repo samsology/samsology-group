@@ -1,0 +1,491 @@
+/* VARIABLES */
+:root{
+  --uni-body:#01362d;
+  --uni-paragraph:white;
+  --uni-body-1OOL:#06073f;
+  --click:linear-gradient(180deg,black 0%, blue 100%);
+}
+.motto{
+  color: aqua;
+  font-size: 1.5rem;
+  text-align: center;
+ margin-bottom: 0rem;
+}
+/* ---------------about samsology group --------------*/
+
+section p,h1{
+  color: aliceblue;
+margin: .5rem;
+}
+section h2{
+  text-align: center;
+  background: #4b4a4a;
+  justify-content: center;
+
+}
+section li{
+  text-align: left;
+  background: #4b4a4a;
+  justify-content: center;
+  margin:0rem 1rem;
+  font-size:1.5rem;
+;
+
+}
+@media only screen and (min-width:760px) {
+  section>p,h1{
+    color: aliceblue;
+  /* margin-left: 15rem;
+  margin-right: 15rem; */
+  }
+  section h2{
+    text-align: center;
+    background: #4b4a4a;
+    justify-content: center;
+    margin-left: 15rem;
+  margin-right: 15rem;
+  }
+  section li{
+    text-align: left;
+    padding: .5rem;
+    background: #4b4a4a;
+    justify-content: center;
+    margin-left: 15rem;
+  margin-right: 15rem;
+  
+  }
+}
+
+p{
+  color: aliceblue;
+}
+
+/* ------------goblal classes---------------------------- */
+.uni-btn{
+  /*background: linear-gradient(180deg, black 0%, blue,100% ) !important;
+  */background-color: var(--click);
+  font-weight: bolder;
+  padding: .8rem 5rem;
+  background-color: #0aff23;
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px 3px rgb(102, 102, 102);
+  outline: none;
+  font-size: 2rem;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.uni-btn:hover{
+  opacity: .6;
+
+}
+.human-ana h2{
+  text-align: center;
+}
+.about-author{
+  text-align: center;
+  justify-content: center;
+  /* display: flex;  */
+  margin-left: 1rem;
+  padding: .5rem .5rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--uni-body);
+}
+/* -----------------first year btn-------------------------------------- */
+.uni-btn-first{
+  
+  padding: .6rem 6rem;
+  margin: .2rem .1rem;
+  font-weight: bolder;
+  font-size:1.2rem;
+  background-color: rgb(197, 196, 196);
+  outline: none;
+  border: none;
+  text-align: left;
+  box-shadow: 1PX 3PX greenyellow;
+}
+.uni-btn-first:hover{
+  box-shadow: none;
+  opacity: .8;
+  color: white;
+}
+/* -----------x--------------first year btn----------------x----------------------------- */
+.uni-h1{
+  text-align: center;
+  background: rgba(0, 0, 0, .35);
+  margin-top: 0rem;
+  margin: 0rem;
+  padding-bottom:1.5rem;
+}
+.uni-body{
+  background: var(--uni-body);
+  color: aliceblue;
+
+}
+ .uni-paragraph{
+  margin-left:.5rem ;
+  margin-right: .5rem;
+} 
+/* ------------X--------global classses---------X------------------ */
+
+
+
+/* ------------------CONTENT------------------------ */
+.site-content-for-uni-{
+  display: grid;
+  grid-template-columns:1fr;
+  margin-left:1rem;
+  margin-right:1rem;
+  grid-gap: 5rem;
+}
+.uni-side-bar ul{
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.uni-side-bar ul li{
+  font-size: 2rem;
+  font-weight: bolder !important;
+  
+}
+.uni-click:hover{
+  background: rgb(22, 43, 1);
+}
+/* ------------------------------slider--------------------------------------------- */
+.slider-uni{
+ background-image: url('../asserts/white-ceramic-teacup-with-saucer-near-two-books-above-gray-904616.jpg');
+  background-position: center;
+  background-size: cover;
+  animation:animate ;
+  -webkit-animation:animate ;
+  animation-duration: 30s ;
+  animation-delay: 3s;
+  padding-bottom:5rem ;
+  animation-iteration-count: infinite ;
+}
+
+ @keyframes animate{
+   0%{
+    background-image: url('../asserts/aeticles/sperms-img\ \(2\).jpg');
+  }
+  25%{
+    background-image: url('../asserts/features-images/colors-colours-health-medicine-143654.jpg');
+  }
+  50%{
+    background-image: url('../asserts/aeticles/human-skeleton.jpg');
+  }
+  75%{
+    background-image: url('../asserts/aeticles/sperm-slide.jpg');
+  }
+  100%{
+    background-image: url('../asserts/aeticles/scientist-with-beaker.jpg');
+}
+ }
+
+/* ---------------------------------------seach box------------ */
+.search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  background: #0aff23;
+  opacity: .9;
+  height: 20px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 20px;
+}
+.search-btn{
+  /* color:#0aff23; */
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.search-txt{
+  border: none;
+  outline: none;
+  float: left;
+  background: none;
+  padding: 0;
+  color: black;
+  font-size: 1rem;
+  transition:.4s ;
+  -webkit-transition:.4s ;
+  -moz-transition:.4s ;
+  -ms-transition:.4s ;
+  -o-transition:.4s ;
+  line-height: 40px;
+  width: 0px;
+}
+
+
+/* ----------------X-----------------------seach box----X-------- */
+
+/* ------------------CONTENT------------------------ */
+
+/* ----------------MEDIA QUriertes--about us---*/
+ @media only screen and (min-width:640px) {
+  .site-content-for-uni-{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  .uni-side-bar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .uni-btn{
+    /*background: linear-gradient(180deg, black 0%, blue,100% ) !important;
+    */background-color: var(--click);
+    font-weight: bolder;
+    padding: 1rem 15rem;
+    background-color: #030f04;
+    color: rgb(252, 249, 249);
+    margin: .5rem .5rem;
+    box-shadow: 1px 1px 1px 3px rgb(102, 102, 102);
+    max-width: 4rem;
+    outline: none;
+    font-size: 2rem;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  section p,h1{
+    color: aliceblue;
+  margin: 1rem;
+  }
+  .uni-side-bar ul{
+    background:rgba(0, 0, 0, .74);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .uni-side-bar h2{
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .uni-side-bar li{
+    font:bolder;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .uni-side-bar li a{
+    font-size: 1rem;
+  }
+h1{
+  text-align: center;
+}
+.about-author{
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+  margin-left: 30rem;
+  padding: 1rem 1rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--uni-body);
+}
+ .about-us-p{
+  margin-left: 8rem;
+  margin-right: 8rem;
+
+} 
+.search-box{
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  background: #0aff23;
+  opacity: .8;
+  height: 40px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  padding: 20px;
+
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 40px;
+ 
+}
+.search-btn{
+  /* color:#0aff23; */
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-txt{
+  border: none;
+  outline: none;
+  float: left;
+  background: none;
+  padding: 0;
+  color: black;
+  font-size: 1.4rem;
+  transition:.4s ;
+  -webkit-transition:.4s ;
+  -moz-transition:.4s ;
+  -ms-transition:.4s ;
+  -o-transition:.4s ;
+  line-height: 40px;
+  width: 0px;
+}
+
+} 
+
+/* --------------------------JOIN US FORM-------------------- */
+.form-container{
+  display:block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  margin: 1rem 1rem;
+  box-shadow: 1px 3px 3px 5px rgb(125, 180, 41);
+}
+.form-container h1{
+  text-align: center;
+}
+.input{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: .5rem 2rem;
+  margin: .4rem .4rem;
+  outline: none;
+  border-radius:20px ;
+  border: none;
+  -webkit-border-radius:20px ;
+  -moz-border-radius:20px ;
+  -ms-border-radius:20px ;
+  -o-border-radius:20px ;
+  box-shadow: 1px 1px 1px 6px rgb(20, 36, 28);
+}
+.input:focus{
+  opacity: .8;
+}
+.inner-container{
+  display:block;
+  margin: 1rem 1rem;
+}
+.inner-container label{
+  align-items: center;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+}
+#option{
+ outline: none;
+ border: none;
+ padding: .5rem 1.5rem;
+ margin: .4rem .5rem;
+ line-height: 20px;
+}
+.submit{
+text-align: center;
+justify-content: center;
+align-items: center;
+padding: 1rem 2rem;
+}
+.submitNow{
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: ease-in-out;
+  -webkit-transition: ease-in-out;
+  -moz-transition: ease-in-out;
+  -ms-transition: ease-in-out;
+  -o-transition: ease-in-out;
+  box-shadow: 2px 1px 1px 4px rgb(5, 4, 0);
+}
+.submitNow:hover{
+  background-color: rgb(2, 2, 65);
+  box-shadow: none;
+transform-style: preserve-3d;
+color: white;
+
+}
+/* media qureies for form */
+@media screen and (min-width:420px){
+  .input{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .5rem 5rem;
+    margin: .4rem .8rem;
+    outline: none;
+    border-radius:20px ;
+    border: none;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+    box-shadow: 1px 1px 1px 6px rgb(20, 36, 28);
+  }
+  .form-container{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    margin: 1rem 2rem 2rem;
+    box-shadow: 1px 3px 3px 5px rgb(125, 180, 41);
+  }
+}
+
+@media screen and (min-width:641px){
+  .inner-container{
+    display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+  }
+
+}
+/* ------------X--------------JOIN US FORM---------X----------- */
